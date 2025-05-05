@@ -1,4 +1,4 @@
-¿¿Qué es la cuadratura gaussiana??
+¿Qué es la cuadratura gaussiana?
 
 La cuadratura gaussiana es un método numérico que nos ayuda a calcular aproximaciones de integrales definidas sin necesidad de dividir el intervalo en muchas partes iguales. En lugar de eso, selecciona de manera inteligente los puntos (nodos) y los pesos que mejor aproximan el valor de la integral, logrando una mayor precisión incluso con pocos puntos.
 
@@ -18,7 +18,7 @@ Aquí, \(x_i\) son los nodos (puntos) y \(w_i\) son los pesos, ambos ajustados p
 
 Cambio de intervalo:
 
-Como los nodos y pesos estándar se calculan en el intervalo \([-1, 1]\), es necesario hacer una transformación para adaptarlos a cualquier intervalo \([a, b]\):
+Como los nodos y pesos estándar se calculan en el intervalo \([-1, 1]\), es necesario hacer una transformación para escalarlos a cualquier intervalo \([a, b]\):
 
 \[
 x = \frac{b - a}{2} \xi + \frac{a + b}{2}
