@@ -6,7 +6,7 @@ theme:
 nav:
   - Inicio: index.md
   - Explicación: explicacion.md
-  - Código fuente: codigo.md
+  - Código fuente: tutorials.md
   - Referencia: referencia.md
 
 plugins:
