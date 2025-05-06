@@ -1,3 +1,8 @@
+<script type="text/javascript"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
 # ¿Qué es la cuadratura gaussiana?
 
 La cuadratura gaussiana es un método numérico que nos ayuda a calcular aproximaciones de integrales definidas sin necesidad de dividir el intervalo en muchas partes iguales. En lugar de eso, selecciona de manera inteligente los puntos (nodos) y los pesos que mejor aproximan el valor de la integral, logrando una mayor precisión incluso con pocos puntos.
@@ -8,39 +13,35 @@ La cuadratura gaussiana es un método numérico que nos ayuda a calcular aproxim
 
 ## Fórmula principal:
 
-Para una función `f(x)`, la integral de `a` a `b` se puede aproximar así:
+Para una función \( f(x) \), la integral de \( a \) a \( b \) se puede aproximar así:
 
-∫ de a a b de f(x) dx ≈ suma desde i=1 hasta n de (w_i * f(x_i))
-
-markdown
-Copiar
-Editar
+$$
+\int_a^b f(x)\, dx \approx \sum_{i=1}^n w_i f(x_i)
+$$
 
 Aquí:
-- `x_i` son los nodos (puntos)
-- `w_i` son los pesos
-- ambos están ajustados al intervalo `[a, b]`.
+- \( x_i \) son los nodos (puntos)
+- \( w_i \) son los pesos
+- ambos están ajustados al intervalo \([a, b]\).
 
 ## Cambio de intervalo:
 
-Como los nodos y pesos estándar se calculan en el intervalo `[-1, 1]`, es necesario hacer una transformación para escalarlos a cualquier intervalo `[a, b]`:
+Como los nodos y pesos estándar se calculan en el intervalo \([-1, 1]\), es necesario hacer una transformación para escalarlos a cualquier intervalo \([a, b]\):
 
-x = ((b - a)/2) * ξ + (a + b)/2
+$$
+x = \frac{b - a}{2} \xi + \frac{a + b}{2}
+$$
 
-css
-Copiar
-Editar
+Y la integral en \([a, b]\) se calcula como:
 
-Y la integral en `[a, b]` se calcula como:
-
-∫ de a a b de f(x) dx ≈ (b - a)/2 * suma desde i=1 hasta n de (w_i * f(((b - a)/2) * ξ_i + (a + b)/2))
-
-css
-Copiar
-Editar
+$$
+\int_a^b f(x)\, dx = \frac{b - a}{2} \sum_{i=1}^n w_i f\left( \frac{b - a}{2} \xi_i + \frac{a + b}{2} \right)
+$$
 
 De esta manera, podemos aplicar la cuadratura gaussiana a diferentes intervalos de forma sencilla y eficiente.
 
 [3. Código en Python con explicación](tutorials.md)
+
+
 
 
