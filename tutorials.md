@@ -22,5 +22,5 @@ import matplotlib.pyplot as plt
 
 resultado= gauss_integrate_sin_x2(0, np.pi, 30)
 print(resultado)
-
+```
 
