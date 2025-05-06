@@ -18,9 +18,7 @@ def gauss_integrate_sin_x2(a, b, N):
     x, w = gaussxw(N)
     x_scaled, w_scaled = gaussxwab(a, b, x, w)
     return np.sum(w_scaled * np.sin(x_scaled**2))
-import matplotlib.pyplot as plt
 
 resultado= gauss_integrate_sin_x2(0, np.pi, 30)
 print(resultado)
-```
 
