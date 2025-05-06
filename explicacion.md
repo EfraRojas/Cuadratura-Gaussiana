@@ -29,13 +29,13 @@ Aquí:
 Como los nodos y pesos estándar se calculan en el intervalo \([-1, 1]\), es necesario hacer una transformación para escalarlos a cualquier intervalo \([a, b]\):
 
 $$
-x = \frac{b - a}{2} \xi + \frac{a + b}{2}
+x = \frac{b - a}{2} x_i + \frac{a + b}{2}
 $$
 
 Y la integral en \([a, b]\) se calcula como:
 
 $$
-\int_a^b f(x)\, dx = \frac{b - a}{2} \sum_{i=1}^n w_i f\left( \frac{b - a}{2} *xi_i + \frac{a + b}{2} \right)
+\int_a^b f(x)\, dx = \frac{b - a}{2} \sum_{i=1}^n w_i f\left( \frac{b - a}{2} x_i + \frac{a + b}{2} \right)
 $$
 
 De esta manera, podemos aplicar la cuadratura gaussiana a diferentes intervalos de forma sencilla y eficiente.
