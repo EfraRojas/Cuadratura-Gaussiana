@@ -35,7 +35,7 @@ $$
 Y la integral en \([a, b]\) se calcula como:
 
 $$
-\int_a^b f(x)\, dx = \frac{b - a}{2} \sum_{i=1}^n w_i f\left( \frac{b - a}{2} \xi_i + \frac{a + b}{2} \right)
+\int_a^b f(x)\, dx = \frac{b - a}{2} \sum_{i=1}^n w_i f\left( \frac{b - a}{2} *xi_i + \frac{a + b}{2} \right)
 $$
 
 De esta manera, podemos aplicar la cuadratura gaussiana a diferentes intervalos de forma sencilla y eficiente.
