@@ -40,8 +40,8 @@ $$
 
 De esta manera, podemos aplicar la cuadratura gaussiana a diferentes intervalos de forma sencilla y eficiente.
 
-[1. Explicación teórica](index.md)
-[3. Código en Python con explicación](tutorials.md)
+- [1. Explicación teórica](index.md)
+- [3. Código en Python con explicación](tutorials.md)
 
 
 
