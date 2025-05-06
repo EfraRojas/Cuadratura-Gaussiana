@@ -20,8 +20,8 @@ $$
 $$
 
 Aquí:
-- $$\( x_i \)$$ son los nodos (puntos)
-- $$\( w_i \)$$ son los pesos
+- \( xi \) son los nodos (puntos)
+- \( wi \) son los pesos
 - ambos están ajustados al intervalo \([a, b]\).
 
 ## Cambio de intervalo:
