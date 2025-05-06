@@ -23,3 +23,5 @@ resultado = gauss_integrate_sin_x2(0, np.pi, 30)
 print(resultado)
 
 ```
+- [1. Explicación teórica](teoria.md)
+- [2. Ejemplo aplicado](ejemplo.md)
