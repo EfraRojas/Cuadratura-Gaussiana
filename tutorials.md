@@ -21,3 +21,5 @@ def gauss_integrate_sin_x2(a, b, N):
 
 resultado = gauss_integrate_sin_x2(0, np.pi, 30)
 print(resultado)
+
+```
